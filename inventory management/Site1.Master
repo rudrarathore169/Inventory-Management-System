@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="inventory_management.Site1" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Inventory Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+
+    <style type="text/css">
+        .auto-style2 {
+            width: 139px;
+            text-align: center;
+        }
+        .auto-style3 {
+            text-align: center;
+            width: 200px;
+            background-color: #FFCCFF;
+        }
+        .auto-style5 {
+            text-align: center;
+            width: 201px;
+            background-color: #FFCCFF;
+        }
+        .auto-style7 {
+            text-align: center;
+            width: 216px;
+            background-color: #FFCCFF;
+        }
+        .auto-style8 {
+            text-align: center;
+            background-color: #FFCCFF;
+        }
+        .auto-style9 {
+            height: 58px;
+            background-color: #66FFFF;
+        }
+        .auto-style10 {
+            width: 100%;
+            margin-top: 0px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="auto-style9">Inventory Management System</h1>
+            <table class="auto-style10">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/inventory management system logo with the name Inventory and a different style (1).png" Width="139px" />
+                    </td>
+                    <td class="auto-style3"><a href="Home.aspx">Home</a></td>
+                    <td class="auto-style5"><a href="Products.aspx">Products</a></td>
+                    <td class="auto-style3"><a href="Orders.aspx">Orders</a></td>
+                    <td class="auto-style5"><a href="Customers.aspx">Customers</a></td>
+                    <td class="auto-style7"><a href="Reports.aspx">Reports</a></td>
+                    <td class="auto-style8"><a href="AdminLogin.aspx">Admin Login</a></td>
+                </tr>
+            </table>
+        </header>
+
+        <!-- Navigation -->
+
+        <!-- Main Content -->
+        <div id="content" runat="server">
+            <asp:ContentPlaceHolder id="MainContent" runat="server" />
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>©&nbsp; Inventory Management System</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS (optional for added interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>
+
+
+
